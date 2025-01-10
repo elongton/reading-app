@@ -1,0 +1,123 @@
+export const dummyList =  [
+    {
+      title: "To Kill a Mockingbird",
+      published: 1960,
+      author: "Harper Lee",
+      coverImage: "https://covers.openlibrary.org/b/id/8225261-L.jpg",
+    },
+    {
+      title: "1984",
+      published: 1949,
+      author: "George Orwell",
+      coverImage: "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+    },
+    {
+      title: "Pride and Prejudice",
+      published: 1813,
+      author: "Jane Austen",
+      coverImage: "https://covers.openlibrary.org/b/id/8231856-L.jpg",
+    },
+    {
+      title: "The Great Gatsby",
+      published: 1925,
+      author: "F. Scott Fitzgerald",
+      coverImage: "https://covers.openlibrary.org/b/id/7222161-L.jpg",
+    },
+    {
+      title: "Moby Dick",
+      published: 1851,
+      author: "Herman Melville",
+      coverImage: "https://covers.openlibrary.org/b/id/7222256-L.jpg",
+    },
+    {
+      title: "War and Peace",
+      published: 1869,
+      author: "Leo Tolstoy",
+      coverImage: "https://covers.openlibrary.org/b/id/7222261-L.jpg",
+    },
+    {
+      title: "The Catcher in the Rye",
+      published: 1951,
+      author: "J.D. Salinger",
+      coverImage: "https://covers.openlibrary.org/b/id/7222271-L.jpg",
+    },
+    {
+      title: "The Hobbit",
+      published: 1937,
+      author: "J.R.R. Tolkien",
+      coverImage: "https://covers.openlibrary.org/b/id/7222281-L.jpg",
+    },
+    {
+      title: "Fahrenheit 451",
+      published: 1953,
+      author: "Ray Bradbury",
+      coverImage: "https://covers.openlibrary.org/b/id/7222291-L.jpg",
+    },
+    {
+      title: "Jane Eyre",
+      published: 1847,
+      author: "Charlotte Brontë",
+      coverImage: "https://covers.openlibrary.org/b/id/7222301-L.jpg",
+    },
+    {
+      title: "Brave New World",
+      published: 1932,
+      author: "Aldous Huxley",
+      coverImage: "https://covers.openlibrary.org/b/id/7222311-L.jpg",
+    },
+    {
+      title: "The Adventures of Huckleberry Finn",
+      published: 1884,
+      author: "Mark Twain",
+      coverImage: "https://covers.openlibrary.org/b/id/7222321-L.jpg",
+    },
+    {
+      title: "Crime and Punishment",
+      published: 1866,
+      author: "Fyodor Dostoevsky",
+      coverImage: "https://covers.openlibrary.org/b/id/7222331-L.jpg",
+    },
+    {
+      title: "The Odyssey",
+      published: -800,
+      author: "Homer",
+      coverImage: "https://covers.openlibrary.org/b/id/7222341-L.jpg",
+    },
+    {
+      title: "Wuthering Heights",
+      published: 1847,
+      author: "Emily Brontë",
+      coverImage: "https://covers.openlibrary.org/b/id/7222351-L.jpg",
+    },
+    {
+      title: "The Divine Comedy",
+      published: 1320,
+      author: "Dante Alighieri",
+      coverImage: "https://covers.openlibrary.org/b/id/7222361-L.jpg",
+    },
+    {
+      title: "The Brothers Karamazov",
+      published: 1880,
+      author: "Fyodor Dostoevsky",
+      coverImage: "https://covers.openlibrary.org/b/id/7222371-L.jpg",
+    },
+    {
+      title: "Les Misérables",
+      published: 1862,
+      author: "Victor Hugo",
+      coverImage: "https://covers.openlibrary.org/b/id/7222381-L.jpg",
+    },
+    {
+      title: "The Iliad",
+      published: -750,
+      author: "Homer",
+      coverImage: "https://covers.openlibrary.org/b/id/7222391-L.jpg",
+    },
+    {
+      title: "Anna Karenina",
+      published: 1877,
+      author: "Leo Tolstoy",
+      coverImage: "https://covers.openlibrary.org/b/id/7222401-L.jpg",
+    },
+  ];
+  

@@ -1,0 +1,20 @@
+<main style="display:flex;">
+    <section>
+        <input [(ngModel)]="filterValue"  (ngModelChange)="onKeyUp($event)" type="text" style="width: 100%;" >
+        
+        <div style="display: flex; flex-wrap: wrap;">
+            <div style="width: 200px;" *ngFor="let book of displayedList">
+                <div>
+                    {{book.title}}
+                </div>
+                <div>
+                    <img style="width: 100%;" src={{book.coverImage}} alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="width: 200px; border: 1px dashed black; flex-shrink: 0;">
+    
+    </section>
+
+</main>
