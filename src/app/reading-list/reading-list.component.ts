@@ -1,6 +1,6 @@
-import { CommonModule } from '@angular/common';
 import { Component, signal, WritableSignal } from '@angular/core';
 import { Book } from '../types';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
