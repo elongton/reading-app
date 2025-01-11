@@ -1,0 +1,14 @@
+<section style="width: 200px; border: 1px dashed black; flex-shrink: 0; height: 100%;">
+    <div *ngFor="let selectedBook of readingList()">
+        <div style="display:flex">
+            <div>
+                <img style="width: 50px;" src={{selectedBook.coverImage}} alt="">
+            </div>
+            <div>
+                <span>{{selectedBook.title}}</span>
+                <span style="cursor: pointer" (click)="removeFromReadingList(selectedBook)">❌</span>
+            </div>
+        </div>
+
+    </div>
+</section>

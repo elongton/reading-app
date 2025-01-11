@@ -1,1 +1,12 @@
-<app-reading-list-generator></app-reading-list-generator>
+<header class="header" style="padding: 25px 0; display: flex; align-items: center;" >
+  <a routerLink="/reading-list">Home</a>
+  <a routerLink="/calendar">Calendar</a>
+</header>
+
+
+<main style="display: flex;">
+  <section style="flex-grow: 1;">
+    <router-outlet />
+  </section>
+  <app-reading-list></app-reading-list>
+</main>

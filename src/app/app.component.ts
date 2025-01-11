@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ReadingListGeneratorComponent } from './reading-list-generator/reading-list-generator.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { ReadingListComponent } from './reading-list/reading-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ReadingListGeneratorComponent],
+  imports: [RouterOutlet, RouterLink, ReadingListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,0 +1,18 @@
+<main style="display:flex;">
+    <section>
+        <div style="padding-right: 15px;">
+            <input placeholder="Select a book" [(ngModel)]="filterValue"  (ngModelChange)="onKeyUp($event)" type="text" style="width: 100%;" >
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; padding: 10px;">
+            <div style="width: 100px; padding: 10px" *ngFor="let book of displayedList()" (click)="addToReadingList(book)" [ngClass]="book.inList ? 'selected-book': null">
+                <div>
+                    {{book.title}}
+                </div>
+                <div>
+                    <img style="width: 100%;" src={{book.coverImage}} alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

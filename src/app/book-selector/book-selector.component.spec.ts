@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReadingListGeneratorComponent } from './reading-list-generator.component';
+import { ReadingListGeneratorComponent } from './book-selector.component';
 
 describe('ReadingListGeneratorComponent', () => {
   let component: ReadingListGeneratorComponent;
