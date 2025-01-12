@@ -1,35 +1,37 @@
 import { Component, Signal, signal, WritableSignal } from '@angular/core';
-import { dummyList } from './dummyList';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Book, DisplayBook } from '../books.model';
+import { Store } from '@ngrx/store';
+import { selectBooks, selectCollectionState } from '../state/book.selectors';
 
 @Component({
   selector: 'book-selector',
-  standalone: false,
-  // imports: [CommonModule, FormsModule],
+  standalone: true,
+  imports: [FormsModule, CommonModule],
   templateUrl: './book-selector.component.html',
-  styleUrl: './book-selector.component.scss'
+  styleUrl: './book-selector.component.scss',
 })
-
 export class BookSelectorComponent {
 
-  dummyBooks = dummyList;
-  displayedList: WritableSignal<DisplayBook[]> = signal(this.dummyBooks);
-  filterValue = ""
- 
+  constructor(private store: Store){}
+  // dummyBooks = [];
+  // displayedList: WritableSignal<DisplayBook[]> = signal(this.dummyBooks);
+  displayedList = this.store.select(selectCollectionState);
+  filterValue = '';
 
-  ngInit(){
-    console.log(this.dummyBooks)
+  ngOnInit() {
+    this.displayedList.subscribe(r => console.log(r));
   }
 
-  onKeyUp(val: any){
-    console.log(val)
-    // console.log(this.filterValue)
-    this.displayedList.set(this.dummyBooks.filter(book => book.title.includes(val)));
+  onKeyUp(val: any) {
+    console.log(val);
+    // this.displayedList.set(
+    //   this.dummyBooks.filter((book) => book.title.includes(val))
+    // );
   }
 
-  addToReadingList(book: DisplayBook){
+  addToReadingList(book: DisplayBook) {
     // this.readingList.update(r => [...r, book])
     book.inList = true;
   }

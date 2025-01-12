@@ -9,10 +9,3 @@ export const routes: Routes = [
     {path: 'reading-list', component: BookSelectorComponent},
     {path: '', redirectTo: '/reading-list', pathMatch: 'full'}
 ];
-
-
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule]
-  })
-  export class AppRoutingModule {}

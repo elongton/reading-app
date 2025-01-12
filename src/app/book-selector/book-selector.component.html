@@ -5,7 +5,7 @@
         </div>
         
         <div style="display: flex; flex-wrap: wrap; padding: 10px;">
-            <div style="width: 100px; padding: 10px" *ngFor="let book of displayedList()" (click)="addToReadingList(book)" [ngClass]="book.inList ? 'selected-book': null">
+            <div style="width: 100px; padding: 10px" *ngFor="let book of displayedList | async" (click)="addToReadingList(book)" >
                 <div>
                     {{book.title}}
                 </div>
@@ -16,3 +16,7 @@
         </div>
     </section>
 </main>
+
+
+
+<!-- [ngClass]="book.inList ? 'selected-book': null" -->
