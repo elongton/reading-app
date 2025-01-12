@@ -4,9 +4,8 @@ import { ReadingListComponent } from './reading-list/reading-list.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, RouterLink, ReadingListComponent],
   templateUrl: './app.component.html',
+  standalone: false,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {

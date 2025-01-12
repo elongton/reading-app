@@ -2,20 +2,19 @@ import { Component, Signal, signal, WritableSignal } from '@angular/core';
 import { dummyList } from './dummyList';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Book, DisplayBook } from '../types';
+import { Book, DisplayBook } from '../books.model';
 
 @Component({
   selector: 'book-selector',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
+  standalone: false,
+  // imports: [CommonModule, FormsModule],
   templateUrl: './book-selector.component.html',
   styleUrl: './book-selector.component.scss'
 })
 
-export class ReadingListGeneratorComponent {
+export class BookSelectorComponent {
 
   dummyBooks = dummyList;
-  // displayedList: displayBook[] = this.dummyBooks;
   displayedList: WritableSignal<DisplayBook[]> = signal(this.dummyBooks);
   filterValue = ""
  

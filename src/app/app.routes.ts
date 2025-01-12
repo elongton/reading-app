@@ -1,10 +1,18 @@
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { CalendarComponent } from './calendar/calendar.component';
-import { ReadingListGeneratorComponent } from './book-selector/book-selector.component';
+import { BookSelectorComponent } from './book-selector/book-selector.component';
+import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
     // {path: 'home', component: Home}
     {path: 'calendar', component: CalendarComponent},
-    {path: 'reading-list', component: ReadingListGeneratorComponent},
+    {path: 'reading-list', component: BookSelectorComponent},
     {path: '', redirectTo: '/reading-list', pathMatch: 'full'}
 ];
+
+
+@NgModule({
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
+  })
+  export class AppRoutingModule {}

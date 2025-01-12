@@ -1,12 +1,12 @@
 import { Component, signal, WritableSignal } from '@angular/core';
-import { Book } from '../types';
+import { Book } from '../books.model';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-reading-list',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
+  standalone: false,
+  // imports: [CommonModule, FormsModule],
   templateUrl: './reading-list.component.html',
   styleUrl: './reading-list.component.scss'
 })
